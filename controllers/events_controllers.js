@@ -56,7 +56,7 @@ events.put('/:id', async (req, res) => {
             }
         })
         res.status(200).json({
-            message: `Successfully updated ${updatefoundEvents} event(s)`
+            message: `Successfully updated ${updatefoundEvents} event(s)!`
         })
     } catch(err) {
         res.status(500).json(err)
@@ -72,7 +72,7 @@ events.delete('/:id', async (req, res) => {
             }
         })
         res.status(200).json({
-            message: `Successfully deleted ${deletfoundEvents} event(s)`
+            message: `Successfully deleted ${deletfoundEvents} event(s)!`
         })
     } catch(err) {
         res.status(500).json(err)
